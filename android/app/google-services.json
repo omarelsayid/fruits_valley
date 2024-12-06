@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "966832750162",
+    "project_id": "fruits-valley-e242e",
+    "storage_bucket": "fruits-valley-e242e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966832750162:android:50273f20ddfca12e05a98b",
+        "android_client_info": {
+          "package_name": "com.example.fruits_valley"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmNKnEiaWaKqOdL6BEelCmT--1yRQxvrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

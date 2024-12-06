@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+
 import 'widgets/splash_view_body.dart';
 
 class SplashView extends StatelessWidget {
@@ -8,9 +8,13 @@ class SplashView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    SystemChrome.setEnabledSystemUIMode(SystemUiMode.leanBack);
+    // SystemChrome.setSystemUIOverlayStyle(const SystemUiOverlayStyle(
+    //   statusBarColor: Colors.transparent, // transparent status bar
+    // ));
     return const Scaffold(
-      body: SpashViewBody(),
+      body: SafeArea(
+        
+        child: SpashViewBody()),
     );
   }
 }
