@@ -2,7 +2,7 @@
   "project_info": {
     "project_number": "966832750162",
     "project_id": "fruits-valley-e242e",
-    "storage_bucket": "fruits-valley-e242e.appspot.com"
+    "storage_bucket": "fruits-valley-e242e.firebasestorage.app"
   },
   "client": [
     {
@@ -12,7 +12,20 @@
           "package_name": "com.example.fruits_valley"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "966832750162-cj2o017dnvpkrvnfomh3me6n1eavtb74.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.fruits_valley",
+            "certificate_hash": "4323ce89f18d06744eb5c204e23e57d0b3a872a0"
+          }
+        },
+        {
+          "client_id": "966832750162-a3spcsc7ra2ushf3j9lrl0crf2u0kpu6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBmNKnEiaWaKqOdL6BEelCmT--1yRQxvrU"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966832750162-a3spcsc7ra2ushf3j9lrl0crf2u0kpu6.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "966832750162-kkspduf00ch4jpe1cj4u7vvjj3gtru71.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.fruitsValley"
+              }
+            }
+          ]
         }
       }
     }

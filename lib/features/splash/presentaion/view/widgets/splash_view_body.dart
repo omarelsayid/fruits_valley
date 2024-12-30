@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_svg/svg.dart';
-
+import 'package:fruits_valley/core/services/firebase_auth_service.dart';
+import 'package:fruits_valley/features/home/presentaion/view/main_view.dart';
 import '../../../../../constants.dart';
 import '../../../../../core/services/shared_preferences_singleton.dart';
 import '../../../../../core/utils/app_images.dart';
@@ -30,8 +31,14 @@ class _SpashViewBodyState extends State<SpashViewBody> {
       const Duration(seconds: 3),
       () {
         bool isOnBoardingViewSeen = Prefs.getBool(kIsOnBoardingViewSeen);
+
         if (isOnBoardingViewSeen) {
-          Navigator.pushReplacementNamed(context, SignInView.routeName);
+          var loggedIn = FirebaseAuthService().isLoggedIn();
+          if (loggedIn) {
+            Navigator.pushReplacementNamed(context, MainView.routeName);
+          } else {
+            Navigator.pushReplacementNamed(context, SignInView.routeName);
+          }
         } else {
           Navigator.pushReplacementNamed(context, OnBoardingView.routeName);
         }

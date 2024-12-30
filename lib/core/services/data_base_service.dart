@@ -1,12 +1,12 @@
-
-
 abstract class DataBaseService {
   Future<void> addData(
-      {required String path, required Map<String, dynamic> data, String? doucumentId});
+      {required String path,
+      required Map<String, dynamic> data,
+      String? doucumentId});
 
-  Future<Map<String, dynamic>> getData(
-      {required String path, required String docId});
+  Future<dynamic> getData(
+      {required String path, String? docId, Map<String, dynamic>? query});
 
-
-       Future<bool> checkIfDataExists({required String path, required String docuementId});
+  Future<bool> checkIfDataExists(
+      {required String path, required String docuementId});
 }

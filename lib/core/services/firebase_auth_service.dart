@@ -113,4 +113,9 @@ class FirebaseAuthService {
   //   return (await _firebaseAuth.signInWithCredential(facebookAuthCredential))
   //       .user!;
   // }
+
+bool isLoggedIn(){
+  return  _firebaseAuth.currentUser != null;
+}
+
 }

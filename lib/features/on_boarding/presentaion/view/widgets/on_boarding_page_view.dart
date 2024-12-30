@@ -15,7 +15,7 @@ class OnBoardingPageView extends StatelessWidget {
       children: [
         PageViewItem(
           backGroudImage: Assets.imagesPageViewItem1BackgroundImage,
-          image: Assets.imagesFruitbasketAmico1,
+          image: Assets.imagesFruitBasketAmico1,
           isVisible: true,
           tilte: RichText(
             textAlign: TextAlign.center,

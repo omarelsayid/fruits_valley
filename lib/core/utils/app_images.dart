@@ -10,6 +10,26 @@ class Assets {
   /// assets/images/apple_icon.svg
   static const String imagesAppleIcon = "assets/images/apple_icon.svg";
 
+  /// Assets for imagesBannersItemBackground
+  /// assets/images/banners_item_background.svg
+  static const String imagesBannersItemBackground = "assets/images/banners_item_background.svg";
+
+  /// Assets for imagesBoldElement3
+  /// assets/images/bold/element-3.svg
+  static const String imagesBoldElement3 = "assets/images/bold/element-3.svg";
+
+  /// Assets for imagesBoldHomeActtive
+  /// assets/images/bold/home_acttive.svg
+  static const String imagesBoldHomeActtive = "assets/images/bold/home_acttive.svg";
+
+  /// Assets for imagesBoldShoppingCart
+  /// assets/images/bold/shopping-cart.svg
+  static const String imagesBoldShoppingCart = "assets/images/bold/shopping-cart.svg";
+
+  /// Assets for imagesBoldUser
+  /// assets/images/bold/user.svg
+  static const String imagesBoldUser = "assets/images/bold/user.svg";
+
   /// Assets for imagesCheck
   /// assets/images/Check.svg
   static const String imagesCheck = "assets/images/Check.svg";
@@ -18,9 +38,9 @@ class Assets {
   /// assets/images/face_book.svg
   static const String imagesFaceBook = "assets/images/face_book.svg";
 
-  /// Assets for imagesFruit basketAmico 1
-  /// assets/images/fruit basket-amico 1.svg
-  static const String imagesFruit basketAmico 1 = "assets/images/fruit basket-amico 1.svg";
+  /// Assets for imagesFruitBasketAmico1
+  /// assets/images/fruit_basket_amico1.svg
+  static const String imagesFruitBasketAmico1 = "assets/images/fruit_basket_amico1.svg";
 
   /// Assets for imagesFruitsHub
   /// assets/images/fruits_hub.svg
@@ -29,6 +49,26 @@ class Assets {
   /// Assets for imagesGoogleIcon
   /// assets/images/google_icon.svg
   static const String imagesGoogleIcon = "assets/images/google_icon.svg";
+
+  /// Assets for imagesNotif
+  /// assets/images/notif.svg
+  static const String imagesNotif = "assets/images/notif.svg";
+
+  /// Assets for imagesOutlinedElement3
+  /// assets/images/outlined/element-3.svg
+  static const String imagesOutlinedElement3 = "assets/images/outlined/element-3.svg";
+
+  /// Assets for imagesOutlinedShoppingCart
+  /// assets/images/outlined/shopping-cart.svg
+  static const String imagesOutlinedShoppingCart = "assets/images/outlined/shopping-cart.svg";
+
+  /// Assets for imagesOutlinedUser
+  /// assets/images/outlined/user.svg
+  static const String imagesOutlinedUser = "assets/images/outlined/user.svg";
+
+  /// Assets for imagesOutlinedVector
+  /// assets/images/outlined/Vector.svg
+  static const String imagesOutlinedVector = "assets/images/outlined/Vector.svg";
 
   /// Assets for imagesPageViewItem1BackgroundImage
   /// assets/images/page_view_item1_background_image.svg
@@ -47,11 +87,23 @@ class Assets {
   static const String imagesPlants = "assets/images/plants.svg";
 
   /// Assets for imagesProfileImage
-  /// assets/images/profile_image.svg
-  static const String imagesProfileImage = "assets/images/profile_image.svg";
+  /// assets/images/profile_image.png
+  static const String imagesProfileImage = "assets/images/profile_image.png";
+
+  /// Assets for imagesSearch
+  /// assets/images/search.svg
+  static const String imagesSearch = "assets/images/search.svg";
+
+  /// Assets for imagesSetting4
+  /// assets/images/setting-4.svg
+  static const String imagesSetting4 = "assets/images/setting-4.svg";
 
   /// Assets for imagesSplashBottom
   /// assets/images/splash_bottom.svg
   static const String imagesSplashBottom = "assets/images/splash_bottom.svg";
+
+  /// Assets for imagesWatermellonTest
+  /// assets/images/watermellon_test.png
+  static const String imagesWatermellonTest = "assets/images/watermellon_test.png";
 }
 
