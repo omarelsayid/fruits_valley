@@ -85,6 +85,7 @@ class FirebaseAuthService {
             'خطأ في تسجيل الدخول'); // Handle other FirebaseAuthException cases
       }
     }
+    return null;
   }
 
   Future<User> signInWithGoogle() async {

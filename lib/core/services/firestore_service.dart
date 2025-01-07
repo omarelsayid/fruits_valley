@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:fruits_valley/core/services/data_base_service.dart';
+
+import 'data_base_service.dart';
 
 class FirestoreService implements DataBaseService {
   final FirebaseFirestore _firestore = FirebaseFirestore.instance;
@@ -25,7 +26,7 @@ class FirestoreService implements DataBaseService {
       var userData = await _firestore.collection(path).doc(docId).get();
       return userData.data() as Map<String, dynamic>;
     } else {
-      Query<Map<String, dynamic>> data = await _firestore.collection(path);
+      Query<Map<String, dynamic>> data = _firestore.collection(path);
       if (query != null) {
         if (query['orderBy'] != null) {
           var orderByField = query['orderBy'];
@@ -40,7 +41,7 @@ class FirestoreService implements DataBaseService {
 
         var result = await data.get();
         return result.docs
-            .map((e) => e.data() as Map<String, dynamic>)
+            .map((e) => e.data())
             .toList();
       }
     }

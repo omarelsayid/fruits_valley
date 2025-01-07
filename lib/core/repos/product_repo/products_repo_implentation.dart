@@ -1,4 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'dart:developer';
+
 import 'package:dartz/dartz.dart';
 import 'package:fruits_valley/core/entity/prodcut_entity.dart';
 import 'package:fruits_valley/core/failure/failures.dart';
@@ -19,7 +21,7 @@ class ProductsRepoImplentation extends ProductsRepo {
       List<ProductModel> products =
           data.map((e) => ProductModel.fromJson(e)).toList();
       List<ProductEntity> productEntities =
-          products.map((e) => e.toEnity()).toList();
+          products.map((e) => e.toEntity()).toList();
       return right(productEntities);
     } catch (e) {
       return left(ServerFailuer(message: e.toString()));
@@ -38,8 +40,9 @@ class ProductsRepoImplentation extends ProductsRepo {
           }) as List<Map<String, dynamic>>;
       List<ProductModel> products =
           data.map((e) => ProductModel.fromJson(e)).toList();
+      log(products.toString());
       List<ProductEntity> productEntities =
-          products.map((e) => e.toEnity()).toList();
+          products.map((e) => e.toEntity()).toList();
       return right(productEntities);
     } catch (e) {
       return left(ServerFailuer(message: e.toString()));

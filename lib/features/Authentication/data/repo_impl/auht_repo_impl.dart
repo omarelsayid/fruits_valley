@@ -2,10 +2,10 @@ import 'dart:convert';
 import 'dart:developer';
 import 'package:dartz/dartz.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:fruits_valley/constants.dart';
-import 'package:fruits_valley/core/services/data_base_service.dart';
-import 'package:fruits_valley/core/services/shared_preferences_singleton.dart';
-import 'package:fruits_valley/core/utils/backend_end_points.dart';
+import '../../../../constants.dart';
+import '../../../../core/services/data_base_service.dart';
+import '../../../../core/services/shared_preferences_singleton.dart';
+import '../../../../core/utils/backend_end_points.dart';
 import '../../../../core/failure/failures.dart';
 import '../../../../core/services/firebase_auth_service.dart';
 import '../../domain/auth_repo.dart';
@@ -84,12 +84,6 @@ class AuthRepoImpl extends AuthRepo {
     try {
       log('Starting to sign in user...');
       final user = await firebaseAuthService.signInWithGoogle();
-
-      if (user == null) {
-        log('User sign in failed.');
-        await deleteUser(user);
-        return left(ServerFailuer(message: 'User sign in failed.'));
-      }
 
       // Convert the Firebase User to your custom UserModel
       log('User signed in successfully: ${user.email}');

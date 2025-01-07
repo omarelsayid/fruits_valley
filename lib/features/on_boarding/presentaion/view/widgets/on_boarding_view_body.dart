@@ -1,10 +1,11 @@
 import 'package:dots_indicator/dots_indicator.dart';
 import 'package:flutter/material.dart';
-import '../../../../../core/services/shared_preferences_singleton.dart';
-import '../../../../Authentication/presenttaion/views/singin_view.dart';
+
 import '../../../../../constants.dart';
+import '../../../../../core/services/shared_preferences_singleton.dart';
 import '../../../../../core/utils/app_colors.dart';
 import '../../../../../core/widgets/custom_button.dart';
+import '../../../../Authentication/presentation/views/singin_view.dart';
 import 'on_boarding_page_view.dart';
 
 class OnBardingViewBody extends StatefulWidget {

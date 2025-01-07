@@ -1,10 +1,10 @@
 
-import 'package:fruits_valley/core/entity/review_entity.dart';
+import '../entity/review_entity.dart';
 
 class ReviewModel {
   final String name;
   final String image;
-  final String rating;
+  final num rating;
   final String date;
   final String reviewDescription;
 

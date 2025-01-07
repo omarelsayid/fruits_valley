@@ -1,4 +1,4 @@
-import 'package:fruits_valley/core/utils/app_images.dart';
+import '../../../core/utils/app_images.dart';
 
 class BottomNavigationBarItemEntity {
   final String activeImage;

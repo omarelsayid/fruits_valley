@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:fruits_valley/core/utils/app_images.dart';
-import 'package:fruits_valley/core/utils/app_text_styles.dart';
-import 'package:fruits_valley/features/home/presentaion/view/widgets/banners_item_buttons.dart';
+import '../../../../../core/utils/app_images.dart';
+import '../../../../../core/utils/app_text_styles.dart';
+import 'banners_item_buttons.dart';
 import 'package:flutter_svg_provider/flutter_svg_provider.dart' as svg;
 
 class BannersIetm extends StatelessWidget {

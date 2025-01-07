@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:fruits_valley/constants.dart';
-import 'package:fruits_valley/core/utils/app_images.dart';
-import 'package:fruits_valley/core/utils/app_text_styles.dart';
+import '../../constants.dart';
+import '../utils/app_images.dart';
+import '../utils/app_text_styles.dart';
 
 class SearchTextField extends StatelessWidget {
   const SearchTextField({super.key});
@@ -13,8 +13,8 @@ class SearchTextField extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(top: kTopPadding),
       child: Container(
-        width: 343,
-        height: 40,
+        width: 343.w,
+        height: 40.h,
         decoration: BoxDecoration(
           boxShadow: const [
             BoxShadow(
@@ -24,7 +24,7 @@ class SearchTextField extends StatelessWidget {
               spreadRadius: 0,
             )
           ],
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(16.r),
         ),
         child: TextField(
           keyboardType: TextInputType.text,
@@ -37,7 +37,7 @@ class SearchTextField extends StatelessWidget {
               onPressed: () {},
             ),
             prefixIcon: IconButton(
-              iconSize: 20,
+              iconSize: 20.w,
               onPressed: () {},
               icon: SvgPicture.asset(
                 Assets.imagesSetting4,

@@ -1,15 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import '../../../../../core/services/custom_password_text_field.dart';
-import '../../signin_cubit/signin_cubit.dart';
-import '../../../../../core/utils/app_images.dart';
-import 'social_login_button.dart';
+
 import '../../../../../constants.dart';
+import '../../../../../core/services/custom_password_text_field.dart';
+import '../../../../../core/utils/app_images.dart';
 import '../../../../../core/utils/app_text_styles.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../core/widgets/custom_text_form_filed.dart';
+import '../../signin_cubit/signin_cubit.dart';
 import 'dont_have_an_account.dart';
 import 'or_divider.dart';
+import 'social_login_button.dart';
 
 class SignInViewBody extends StatefulWidget {
   const SignInViewBody({super.key});

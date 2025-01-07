@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:fruits_valley/features/home/presentaion/view/main_view.dart';
+import '../../../../home/presentaion/view/main_view.dart';
 import '../../../../../core/helper_function/build_error_message.dart';
 import '../../../../../core/services/custom_prgress_hud.dart';
 import '../../signin_cubit/signin_cubit.dart';

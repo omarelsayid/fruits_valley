@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fruits_valley/features/home/presentaion/view/widgets/banners_ietm.dart';
+import 'banners_ietm.dart';
 
 class BannersListView extends StatelessWidget {
   const BannersListView({super.key});

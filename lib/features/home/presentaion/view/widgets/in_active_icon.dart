@@ -6,9 +6,12 @@ class InActiveIcon extends StatelessWidget {
   final String image;
   @override
   Widget build(BuildContext context) {
-    return SvgPicture.asset(
-      image,
-  
+    return Container(
+      height: 20,
+      color: Colors.transparent,
+      child: SvgPicture.asset(
+        image,
+      ),
     );
   }
 }

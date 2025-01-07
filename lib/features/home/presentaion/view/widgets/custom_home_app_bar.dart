@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:fruits_valley/core/helper_function/get_user.dart';
-import 'package:fruits_valley/core/utils/app_images.dart';
-import 'package:fruits_valley/core/utils/app_text_styles.dart';
-import 'package:fruits_valley/core/widgets/notification_widget.dart';
+import '../../../../../core/helper_function/get_user.dart';
+import '../../../../../core/utils/app_images.dart';
+import '../../../../../core/utils/app_text_styles.dart';
+import '../../../../../core/widgets/notification_widget.dart';
 
 class CustomHomeAppBar extends StatelessWidget {
   const CustomHomeAppBar({super.key});

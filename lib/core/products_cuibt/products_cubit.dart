@@ -1,8 +1,7 @@
-import 'dart:developer';
 
 import 'package:bloc/bloc.dart';
-import 'package:fruits_valley/core/entity/prodcut_entity.dart';
-import 'package:fruits_valley/core/repos/product_repo/product_repo.dart';
+import '../entity/prodcut_entity.dart';
+import '../repos/product_repo/product_repo.dart';
 import 'package:meta/meta.dart';
 
 part 'products_state.dart';
@@ -10,6 +9,7 @@ part 'products_state.dart';
 class ProductsCubit extends Cubit<ProductsState> {
   ProductsCubit(this._productsRepo) : super(ProductsInitial());
   final ProductsRepo _productsRepo;
+  int productsLenght = 0;
 
   Future<void> getAllProducts() async {
     emit(ProductsLoading());
@@ -24,6 +24,7 @@ class ProductsCubit extends Cubit<ProductsState> {
     result.fold((l) {
       emit(ProductsFailer(l.message));
     }, (r) {
+      productsLenght = r.length;
       emit(ProductsSuccess(products: r));
     });
   }

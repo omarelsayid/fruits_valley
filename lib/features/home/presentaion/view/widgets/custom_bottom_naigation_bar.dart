@@ -1,12 +1,11 @@
-import 'dart:developer';
 
 import 'package:flutter/material.dart';
-import 'package:fruits_valley/features/home/entity/bottom_navigation_bar_item_entity.dart';
-import 'package:fruits_valley/features/home/presentaion/view/widgets/navigation_bat_item.dart';
+import '../../../entity/bottom_navigation_bar_item_entity.dart';
+import 'navigation_bat_item.dart';
 
 class CustomBottomNaigationBar extends StatefulWidget {
-  const CustomBottomNaigationBar({super.key});
-
+  const CustomBottomNaigationBar({super.key, required this.onItemTapped});
+  final ValueChanged<int> onItemTapped;
   @override
   State<CustomBottomNaigationBar> createState() =>
       _CustomBottomNaigationBarState();
@@ -51,7 +50,7 @@ class _CustomBottomNaigationBarState extends State<CustomBottomNaigationBar> {
                   onTap: () {
                     setState(() {
                       selectedIndex = index;
-                      log('selected index : $selectedIndex');
+                      widget.onItemTapped(index);
                     });
                   },
                   child: NavigationBarItem(

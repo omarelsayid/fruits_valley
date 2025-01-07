@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 import 'core/helper_function/onGenerateRoutes.dart';
 import 'core/services/custom_bloc_observer.dart';
 import 'core/services/git_it_service.dart';
@@ -27,7 +28,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: const Size(375, 812), // Design size (width, height)
+      designSize: const Size(376, 812), // Design size (width, height)
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {

@@ -1,12 +1,12 @@
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:fruits_valley/core/helper_function/get_dummy_products.dart';
-import 'package:fruits_valley/core/products_cuibt/products_cubit.dart';
-import 'package:fruits_valley/features/home/presentaion/view/widgets/fruit_item_grid_view.dart';
+import '../../../../../core/helper_function/get_dummy_products.dart';
+import '../../../../../core/products_cuibt/products_cubit.dart';
+import 'products_grid_view.dart';
 import 'package:skeletonizer/skeletonizer.dart';
 
-class BestSellingGridViewBlocBuilder extends StatelessWidget {
-  const BestSellingGridViewBlocBuilder({
+class ProductsGridViewBlocBuilder extends StatelessWidget {
+  const ProductsGridViewBlocBuilder({
     super.key,
   });
 
@@ -15,15 +15,15 @@ class BestSellingGridViewBlocBuilder extends StatelessWidget {
     return BlocBuilder<ProductsCubit, ProductsState>(
       builder: (context, state) {
         if (state is ProductsSuccess) {
-          return BestSellingGirdView(
+          return ProductsGirdView(
             products: state.products,
           );
         } else if (state is ProductsFailer) {
-          return SliverToBoxAdapter(child: ErrorWidget(state.message));
+          return SliverToBoxAdapter(child: Center(child: Text(state.message)));
         } else {
           return SliverSkeletonizer(
               enabled: true,
-              child: BestSellingGirdView(
+              child: ProductsGirdView(
                 products: getDummyProducts(),
               ));
         }

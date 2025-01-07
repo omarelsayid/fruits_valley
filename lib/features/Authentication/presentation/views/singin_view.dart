@@ -17,10 +17,10 @@ class SignInView extends StatelessWidget {
         getIt<AuthRepo>(),
       ),
       child: Scaffold(
-        appBar: buildAppBar(context, title: 'تسجيل الدخول'),
-        body:  const SignInViewBodyBlocConsumer(),
+        appBar:
+            buildAppBar(context, title: 'تسجيل الدخول', showBackIcon: false),
+        body: const SignInViewBodyBlocConsumer(),
       ),
     );
   }
 }
-

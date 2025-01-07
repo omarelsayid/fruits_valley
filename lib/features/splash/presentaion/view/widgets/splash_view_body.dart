@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:fruits_valley/core/services/firebase_auth_service.dart';
-import 'package:fruits_valley/features/home/presentaion/view/main_view.dart';
+import '../../../../../core/services/firebase_auth_service.dart';
+import '../../../../home/presentaion/view/main_view.dart';
 import '../../../../../constants.dart';
 import '../../../../../core/services/shared_preferences_singleton.dart';
 import '../../../../../core/utils/app_images.dart';
-import '../../../../Authentication/presenttaion/views/singin_view.dart';
+import '../../../../Authentication/presentation/views/singin_view.dart';
 import '../../../../on_boarding/presentaion/view/on_boarding_view.dart';
 
 class SpashViewBody extends StatefulWidget {

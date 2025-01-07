@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:fruits_valley/core/utils/app_colors.dart';
-import 'package:fruits_valley/core/utils/app_text_styles.dart';
+import '../../../../../core/utils/app_colors.dart';
+import '../../../../../core/utils/app_text_styles.dart';
 
 class ActiveIcon extends StatelessWidget {
   const ActiveIcon({super.key, required this.image, required this.text});
